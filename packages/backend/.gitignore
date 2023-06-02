@@ -1,0 +1,12 @@
+abi/
+artifacts/
+cache/
+coverage/
+exports/
+node_modules/
+types/
+package-lock.json
+coverage.json
+yarn.lock
+.env
+.DS_Store

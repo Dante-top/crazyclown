@@ -1,0 +1,34 @@
+{
+  "name": "@project/monorepo",
+  "version": "1.0.0",
+  "keywords": [
+    "ethereum",
+    "react",
+    "workspaces",
+    "yarn"
+  ],
+  "private": true,
+  "scripts": {
+    "backend:chain": "yarn workspace @project/backend chain",
+    "backend:compile": "yarn workspace @project/backend compile",
+    "backend:deploy": "yarn workspace @project/backend deploy",
+    "frontend:build": "yarn workspace @project/frontend build",
+    "frontend:eject": "yarn workspace @project/frontend eject",
+    "frontend:start": "yarn workspace @project/frontend start",
+    "frontend:test": "yarn workspace @project/frontend test",
+    "subgraph:auth": "yarn workspace @project/subgraph auth",
+    "subgraph:codegen": "yarn workspace @project/subgraph codegen",
+    "subgraph:build": "yarn workspace @project/subgraph build",
+    "subgraph:deploy": "yarn workspace @project/subgraph deploy",
+    "prettier": "yarn workspace @project/backend prettier && yarn workspace @project/frontend prettier"
+  },
+  "workspaces": {
+    "nohoist": [
+      "**/@graphprotocol/graph-ts",
+      "**/@graphprotocol/graph-ts/**"
+    ],
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

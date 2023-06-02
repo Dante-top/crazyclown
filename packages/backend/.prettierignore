@@ -1,0 +1,13 @@
+# Ignore artifacts:
+node_modules
+src/generated/*
+temp
+artifacts
+cache
+
+
+# Ignore files:
+*.lock
+/build
+/src/generated
+/docs
